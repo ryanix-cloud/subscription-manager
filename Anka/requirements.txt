@@ -1,0 +1,5 @@
+PyQt6>=6.8,<7
+mysql-connector-python>=9.0,<10
+bcrypt>=4.2,<6
+python-dateutil>=2.9,<3
+matplotlib>=3.9,<4

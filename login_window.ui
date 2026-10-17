@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ui version="4.0">
+  <class>login_window</class>
+  <widget class="QWidget" name="login_window">
+    <property name="geometry">
+      <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>900</width>
+        <height>550</height>
+      </rect>
+    </property>
+    <property name="minimumSize">
+      <size>
+        <width>900</width>
+        <height>550</height>
+      </size>
+    </property>
+    <property name="maximumSize">
+      <size>
+        <width>900</width>
+        <height>550</height>
+      </size>
+    </property>
+    <property name="windowTitle">
+      <string>Form</string>
+    </property>
+    <widget class="QFrame" name="background">
+      <property name="geometry">
+        <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>901</width>
+          <height>561</height>
+        </rect>
+      </property>
+      <property name="styleSheet">
+        <string notr="true">QFrame#background {
+	background-color: #F8F4F6;
+	border: none;
+}</string>
+      </property>
+      <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+      </property>
+      <widget class="QFrame" name="leftPanel">
+        <property name="geometry">
+          <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>271</width>
+            <height>561</height>
+          </rect>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QFrame#leftPanel {
+	background-color: #5A1835;
+	border: none;
+}</string>
+        </property>
+        <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="topMargin">
+            <number>100</number>
+          </property>
+          <property name="bottomMargin">
+            <number>100</number>
+          </property>
+          <item alignment="Qt::AlignmentFlag::AlignHCenter">
+            <widget class="QLabel" name="appIcon">
+              <property name="enabled">
+                <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>161</width>
+                  <height>161</height>
+                </size>
+              </property>
+              <property name="maximumSize">
+                <size>
+                  <width>161</width>
+                  <height>161</height>
+                </size>
+              </property>
+              <property name="text">
+                <string />
+              </property>
+              <property name="pixmap">
+                <pixmap>images/subcontrol_icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+                <bool>true</bool>
+              </property>
+              <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QLabel" name="appTitle">
+              <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="styleSheet">
+                <string notr="true">QLabel#appTitle {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}</string>
+              </property>
+              <property name="text">
+                <string>SubControl</string>
+              </property>
+              <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QLabel" name="subtitle">
+              <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+                <size>
+                  <width>0</width>
+                  <height>0</height>
+                </size>
+              </property>
+              <property name="styleSheet">
+                <string notr="true">QLabel {
+    color: #F5DCE8;
+    font-size: 16px;
+}</string>
+              </property>
+              <property name="text">
+                <string>Управление вашими подписками</string>
+              </property>
+              <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+              </property>
+              <property name="wordWrap">
+                <bool>true</bool>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+      <widget class="QFrame" name="rightPanel">
+        <property name="geometry">
+          <rect>
+            <x>268</x>
+            <y>0</y>
+            <width>631</width>
+            <height>553</height>
+          </rect>
+        </property>
+        <property name="styleSheet">
+          <string notr="true">QFrame#loginPanel {
+background-color: white;
+boredr-radius: 25px;
+}</string>
+        </property>
+        <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="leftMargin">
+            <number>50</number>
+          </property>
+          <property name="topMargin">
+            <number>45</number>
+          </property>
+          <property name="rightMargin">
+            <number>50</number>
+          </property>
+          <property name="bottomMargin">
+            <number>40</number>
+          </property>
+          <item>
+            <layout class="QVBoxLayout" name="loginLayout">
+              <property name="spacing">
+                <number>6</number>
+              </property>
+              <property name="topMargin">
+                <number>0</number>
+              </property>
+              <property name="bottomMargin">
+                <number>16</number>
+              </property>
+              <item>
+                <widget class="QLabel" name="loginTitle">
+                  <property name="styleSheet">
+                    <string notr="true">QLabel#loginTitle {
+color: #5A1835;
+font-size: 28px;
+font-weight: bold;
+}</string>
+                  </property>
+                  <property name="text">
+                    <string>Добро пожаловать</string>
+                  </property>
+                  <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                </widget>
+              </item>
+              <item>
+                <widget class="QLabel" name="loginSubtitle">
+                  <property name="styleSheet">
+                    <string notr="true">QLabel#loginSubtitle {
+color: #777777;
+font-size: 14px;
+}</string>
+                  </property>
+                  <property name="text">
+                    <string>Войдите в свою учетную запись</string>
+                  </property>
+                  <property name="alignment">
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
+                  </property>
+                </widget>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <layout class="QVBoxLayout" name="authLayout">
+              <property name="spacing">
+                <number>6</number>
+              </property>
+              <item>
+                <layout class="QVBoxLayout" name="usernameLayout">
+                  <property name="bottomMargin">
+                    <number>12</number>
+                  </property>
+                  <item>
+                    <widget class="QLabel" name="usernameLabel">
+                      <property name="styleSheet">
+                        <string notr="true">QLabel#usernameLabel {
+color: #333333;
+font-size: 14px;
+font-weight: bold;
+}</string>
+                      </property>
+                      <property name="text">
+                        <string>Логин</string>
+                      </property>
+                      <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignCenter</set>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLineEdit" name="usernameInput">
+                      <property name="styleSheet">
+                        <string notr="true">QLineEdit#usernameInput {
+    border: 1px solid #E3C5D3;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #FFF9FC;
+}
+
+QLineEdit#usernameInput:focus {
+    border: 2px solid #C94F83;
+}</string>
+                      </property>
+                      <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+                      </property>
+                      <property name="placeholderText">
+                        <string>Введие логин</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+              <item>
+                <layout class="QVBoxLayout" name="passwordLayout">
+                  <property name="spacing">
+                    <number>2</number>
+                  </property>
+                  <property name="bottomMargin">
+                    <number>12</number>
+                  </property>
+                  <item>
+                    <widget class="QLabel" name="passwordLabel">
+                      <property name="styleSheet">
+                        <string notr="true">QLabel#passwordLabel {
+color: #333333;
+font-size: 14px;
+font-weight: bold;
+}
+</string>
+                      </property>
+                      <property name="text">
+                        <string>Пароль</string>
+                      </property>
+                      <property name="alignment">
+                        <set>Qt::AlignmentFlag::AlignCenter</set>
+                      </property>
+                    </widget>
+                  </item>
+                  <item>
+                    <widget class="QLineEdit" name="passwordInput">
+                      <property name="styleSheet">
+                        <string notr="true">QLineEdit#passwordInput {
+    border: 1px solid #E3C5D3;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #FFF9FC;
+}
+
+QLineEdit#passwordInput:focus {
+    border: 2px solid #C94F83;
+}</string>
+                      </property>
+                      <property name="echoMode">
+                        <enum>QLineEdit::EchoMode::Password</enum>
+                      </property>
+                      <property name="placeholderText">
+                        <string>Введите пароль</string>
+                      </property>
+                    </widget>
+                  </item>
+                </layout>
+              </item>
+            </layout>
+          </item>
+          <item>
+            <widget class="QPushButton" name="loginButton">
+              <property name="styleSheet">
+                <string notr="true">QPushButton#loginButton {
+    background-color: #C94F83;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+QPushButton#loginButton:hover {
+    background-color: #B43F70;
+}
+
+QPushButton#loginButton:pressed {
+    background-color: #9D315F;
+}</string>
+              </property>
+              <property name="text">
+                <string>Войти</string>
+              </property>
+            </widget>
+          </item>
+          <item>
+            <widget class="QPushButton" name="registerButton">
+              <property name="text">
+                <string>Нет аккаунта? Зарегистрироваться</string>
+              </property>
+            </widget>
+          </item>
+        </layout>
+      </widget>
+    </widget>
+  </widget>
+  <resources />
+  <connections />
+</ui>

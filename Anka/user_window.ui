@@ -1,0 +1,2552 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui version="4.0">
+ <class>UserWindow</class>
+ <widget class="QMainWindow" name="UserWindow">
+  <property name="windowTitle">
+   <string>SubControl — мои подписки</string>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>680</height>
+   </size>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="rootLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="sidebarFrame">
+      <property name="minimumSize">
+       <size>
+        <width>256</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>256</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="sidebarLayout">
+       <property name="leftMargin">
+        <number>16</number>
+       </property>
+       <property name="topMargin">
+        <number>16</number>
+       </property>
+       <property name="rightMargin">
+        <number>16</number>
+       </property>
+       <property name="bottomMargin">
+        <number>16</number>
+       </property>
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="brand">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>68</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="brandLayout">
+          <property name="leftMargin">
+           <number>8</number>
+          </property>
+          <property name="topMargin">
+           <number>8</number>
+          </property>
+          <property name="rightMargin">
+           <number>8</number>
+          </property>
+          <property name="bottomMargin">
+           <number>8</number>
+          </property>
+          <property name="spacing">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="brandIcon" />
+          </item>
+          <item>
+           <widget class="QLabel" name="brandName">
+            <property name="text">
+             <string>SubControl</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="homeButton">
+         <property name="text">
+          <string>Главная</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="subscriptionsButton">
+         <property name="text">
+          <string>Мои подписки</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="paymentsButton">
+         <property name="text">
+          <string>Платежи</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="notificationsButton">
+         <property name="text">
+          <string>Уведомления</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="settingsButton">
+         <property name="text">
+          <string>Настройки</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="sidebarSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="accountButton">
+         <property name="text">
+          <string>Анна Рыбакова
+Пользователь</string>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>62</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="contentFrame">
+      <layout class="QVBoxLayout" name="contentLayout">
+       <property name="leftMargin">
+        <number>28</number>
+       </property>
+       <property name="topMargin">
+        <number>28</number>
+       </property>
+       <property name="rightMargin">
+        <number>28</number>
+       </property>
+       <property name="bottomMargin">
+        <number>28</number>
+       </property>
+       <property name="spacing">
+        <number>18</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="headerFrame">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>46</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>46</height>
+          </size>
+         </property>
+         <layout class="QHBoxLayout" name="headerLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>12</number>
+          </property>
+          <item>
+           <widget class="QLineEdit" name="searchInput">
+            <property name="placeholderText">
+             <string>Поиск по подпискам, сервисам...</string>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>640</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="headerSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint">
+             <size>
+              <width>20</width>
+              <height>0</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bellButton">
+            <property name="text">
+             <string />
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="avatarButton">
+            <property name="text">
+             <string />
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="statusLabel">
+         <property name="text">
+          <string />
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="stackedWidget">
+         <widget class="QWidget" name="homePage">
+          <layout class="QVBoxLayout" name="homeLayout" stretch="0,0,1">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="homeHeading">
+             <layout class="QHBoxLayout" name="homeHeadingLayout" stretch="1">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="homeHeadingText">
+                <layout class="QVBoxLayout" name="homeTitlesLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="welcomeLabel">
+                   <property name="text">
+                    <string>Привет, Анна!</string>
+                   </property>
+                   <property name="heading" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="homeSubtitle">
+                   <property name="text">
+                    <string>Здесь вы можете управлять своими подписками и платежами.</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="statCards">
+             <layout class="QHBoxLayout" name="statCardsLayout" stretch="1,1,1,1">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="activeStatCard">
+                <property name="stat" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>112</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="activeStatLayout">
+                 <property name="leftMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="spacing">
+                  <number>13</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="activeStatIcon">
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>assets/icons/clipboard.svg</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="activeStatText">
+                   <layout class="QVBoxLayout" name="activeStatTextLayout">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>8</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="activeStatCaption">
+                      <property name="text">
+                       <string>Активные подписки</string>
+                      </property>
+                      <property name="statCaption" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="activeValue">
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="statValue" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="monthlyStatCard">
+                <property name="stat" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>112</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="monthlyStatLayout">
+                 <property name="leftMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="spacing">
+                  <number>13</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="monthlyStatIcon">
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>assets/icons/coins.svg</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="monthlyStatText">
+                   <layout class="QVBoxLayout" name="monthlyStatTextLayout">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>8</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="monthlyStatCaption">
+                      <property name="text">
+                       <string>Расходы в месяц</string>
+                      </property>
+                      <property name="statCaption" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="monthlyValue">
+                      <property name="text">
+                       <string>0 ₽</string>
+                      </property>
+                      <property name="statValue" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="nearestStatCard">
+                <property name="stat" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>112</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="nearestStatLayout">
+                 <property name="leftMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="spacing">
+                  <number>13</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="nearestStatIcon">
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>assets/icons/calendar.svg</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="nearestStatText">
+                   <layout class="QVBoxLayout" name="nearestStatTextLayout">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>8</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="nearestStatCaption">
+                      <property name="text">
+                       <string>Ближайший платёж</string>
+                      </property>
+                      <property name="statCaption" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="nearestValue">
+                      <property name="text">
+                       <string>Нет платежей</string>
+                      </property>
+                      <property name="statValue" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="styleSheet">
+                       <string>font-size:18px;font-weight:700;</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QFrame" name="upcomingStatCard">
+                <property name="stat" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>112</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="upcomingStatLayout">
+                 <property name="leftMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>16</number>
+                 </property>
+                 <property name="spacing">
+                  <number>13</number>
+                 </property>
+                 <item alignment="Qt::AlignTop">
+                  <widget class="QLabel" name="upcomingStatIcon">
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="pixmap">
+                    <pixmap>assets/icons/calendar.svg</pixmap>
+                   </property>
+                   <property name="scaledContents">
+                    <bool>true</bool>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>30</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="upcomingStatText">
+                   <layout class="QVBoxLayout" name="upcomingStatTextLayout">
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="spacing">
+                     <number>8</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="upcomingStatCaption">
+                      <property name="text">
+                       <string>Предстоящие платежи</string>
+                      </property>
+                      <property name="statCaption" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="upcomingValue">
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="statValue" stdset="0">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="homeSubscriptionsPanel">
+             <property name="panel" stdset="0">
+              <bool>true</bool>
+             </property>
+             <layout class="QVBoxLayout" name="homeSubscriptionsPanelLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="homeSubscriptionsHeader">
+                <layout class="QHBoxLayout" name="homeSubscriptionsHeaderLayout" stretch="1,0">
+                 <property name="leftMargin">
+                  <number>17</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>17</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>17</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>17</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="homeSubscriptionsTitle">
+                   <property name="text">
+                    <string>Ближайшие подписки</string>
+                   </property>
+                   <property name="section" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="allSubscriptionsButton">
+                   <property name="text">
+                    <string>Все подписки →</string>
+                   </property>
+                   <property name="flat" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="homeScrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+                </property>
+                <widget class="QWidget" name="homeScrollAreaContents">
+                 <layout class="QVBoxLayout" name="homeRowsLayout">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="subscriptionsPage">
+          <layout class="QVBoxLayout" name="subscriptionsLayout" stretch="0,0,1">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="subscriptionsHeading">
+             <layout class="QHBoxLayout" name="subscriptionsHeadingLayout" stretch="1,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="subscriptionsHeadingText">
+                <layout class="QVBoxLayout" name="subscriptionsTitlesLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="subscriptionsTitle">
+                   <property name="text">
+                    <string>Мои подписки</string>
+                   </property>
+                   <property name="heading" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="subscriptionsSubtitle">
+                   <property name="text">
+                    <string>Здесь отображаются все ваши активные и неактивные подписки.</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="addSubscriptionButton">
+                <property name="text">
+                 <string>Добавить подписку</string>
+                </property>
+                <property name="primary" stdset="0">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="subscriptionTabWrapper">
+             <layout class="QHBoxLayout" name="subscriptionTabWrapperLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="subscriptionTabs">
+                <property name="tabs" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <layout class="QHBoxLayout" name="subscriptionTabsLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="activeTab">
+                   <property name="text">
+                    <string>Активные (0)</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="tab" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="inactiveTab">
+                   <property name="text">
+                    <string>Неактивные (0)</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="tab" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="allTab">
+                   <property name="text">
+                    <string>Все (0)</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="tab" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="subscriptionTabsSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint">
+                 <size>
+                  <width>10</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="subscriptionPanel">
+             <property name="panel" stdset="0">
+              <bool>true</bool>
+             </property>
+             <layout class="QVBoxLayout" name="subscriptionPanelLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QScrollArea" name="subscriptionsScrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+                </property>
+                <widget class="QWidget" name="subscriptionsScrollAreaContents">
+                 <layout class="QVBoxLayout" name="subRowsLayout">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="paymentsPage">
+          <layout class="QVBoxLayout" name="paymentsLayout" stretch="0,0,1">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="paymentsHeading">
+             <layout class="QHBoxLayout" name="paymentsHeadingLayout" stretch="1,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="paymentsHeadingText">
+                <layout class="QVBoxLayout" name="paymentsTitlesLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="paymentsTitle">
+                   <property name="text">
+                    <string>Платежи</string>
+                   </property>
+                   <property name="heading" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentsSubtitle">
+                   <property name="text">
+                    <string>??????? ????? ? ?????????????? ??????? ????????.</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="exportPaymentsButton">
+                <property name="text">
+                 <string>Экспорт</string>
+                </property>
+                <property name="flat" stdset="0">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="paymentFilters">
+             <layout class="QHBoxLayout" name="paymentFiltersLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>12</number>
+              </property>
+              <item>
+               <widget class="QComboBox" name="paymentPeriodCombo">
+                <item>
+                 <property name="text">
+                  <string>За всё время</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Этот месяц</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Прошлый месяц</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="paymentStatusCombo">
+                <item>
+                 <property name="text">
+                  <string>Все статусы</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Успешно</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Ожидается</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Отменён</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Неуспешно</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="checkPaymentsButton">
+                <property name="text">
+                 <string>????????? ????????</string>
+                </property>
+                <property name="toolTip">
+                 <string>???????? ??????? ?????? ?? ????????, ???? ??????? ????????</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="paymentFiltersSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint">
+                 <size>
+                  <width>40</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="paymentsPanel">
+             <property name="panel" stdset="0">
+              <bool>true</bool>
+             </property>
+             <layout class="QVBoxLayout" name="paymentsPanelLayout" stretch="0,1,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="paymentsTableHeader">
+                <layout class="QHBoxLayout" name="paymentsTableHeaderLayout" stretch="2,4,2,2,0">
+                 <property name="leftMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="spacing">
+                  <number>16</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="paymentsDateHeader">
+                   <property name="text">
+                    <string>Дата</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentsServiceHeader">
+                   <property name="text">
+                    <string>Сервис</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentsAmountHeader">
+                   <property name="text">
+                    <string>Сумма</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentsStatusHeader">
+                   <property name="text">
+                    <string>Статус</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentActionsHeader">
+                   <property name="text">
+                    <string />
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>28</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QScrollArea" name="paymentsScrollArea">
+                <property name="widgetResizable">
+                 <bool>true</bool>
+                </property>
+                <property name="horizontalScrollBarPolicy">
+                 <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+                </property>
+                <widget class="QWidget" name="paymentsScrollAreaContents">
+                 <layout class="QVBoxLayout" name="paymentRowsLayout">
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="paymentsFooter">
+                <layout class="QHBoxLayout" name="paymentsFooterLayout" stretch="1,0">
+                 <property name="leftMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>18</number>
+                 </property>
+                 <property name="spacing">
+                  <number>12</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="paymentTotalCaption">
+                   <property name="text">
+                    <string>Оплачено · за всё время</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="paymentTotal">
+                   <property name="text">
+                    <string>0 ₽</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="notificationsPage">
+          <layout class="QVBoxLayout" name="notificationsLayout" stretch="0,0,1">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="notificationsHeading">
+             <layout class="QHBoxLayout" name="notificationsHeadingLayout" stretch="1,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="notificationsHeadingText">
+                <layout class="QVBoxLayout" name="notificationsTitlesLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="notificationsTitle">
+                   <property name="text">
+                    <string>Уведомления</string>
+                   </property>
+                   <property name="heading" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="notificationsSubtitle">
+                   <property name="text">
+                    <string>Напоминания о подписках и события вашего аккаунта.</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="markAllReadButton">
+                <property name="text">
+                 <string>Прочитать все</string>
+                </property>
+                <property name="flat" stdset="0">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="notificationTabWrapper">
+             <layout class="QHBoxLayout" name="notificationTabWrapperLayout">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="notificationTabs">
+                <property name="tabs" stdset="0">
+                 <bool>true</bool>
+                </property>
+                <layout class="QHBoxLayout" name="notificationTabsLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QPushButton" name="allNotificationsTab">
+                   <property name="text">
+                    <string>Все</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="tab" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="unreadNotificationsTab">
+                   <property name="text">
+                    <string>Непрочитанные</string>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="tab" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <spacer name="notificationTabsSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint">
+                 <size>
+                  <width>10</width>
+                  <height>0</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="notificationsScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <widget class="QWidget" name="notificationsScrollAreaContents">
+              <layout class="QVBoxLayout" name="notificationRowsLayout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>12</number>
+               </property>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="settingsPage">
+          <layout class="QVBoxLayout" name="settingsLayout" stretch="0,1,0">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="settingsHeading">
+             <layout class="QHBoxLayout" name="settingsHeadingLayout" stretch="1">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>16</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="settingsHeadingText">
+                <layout class="QVBoxLayout" name="settingsTitlesLayout">
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="spacing">
+                  <number>3</number>
+                 </property>
+                 <item>
+                  <widget class="QLabel" name="settingsTitle">
+                   <property name="text">
+                    <string>Настройки</string>
+                   </property>
+                   <property name="heading" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="settingsSubtitle">
+                   <property name="text">
+                    <string>Управляйте параметрами своего аккаунта.</string>
+                   </property>
+                   <property name="muted" stdset="0">
+                    <bool>true</bool>
+                   </property>
+                   <property name="wordWrap">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="settingsScrollArea">
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <property name="horizontalScrollBarPolicy">
+              <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+             </property>
+             <widget class="QWidget" name="settingsScrollAreaContents">
+              <layout class="QVBoxLayout" name="settingsBodyLayout">
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <property name="spacing">
+                <number>16</number>
+               </property>
+               <item>
+                <widget class="QFrame" name="profilePanel">
+                 <property name="panel" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                 <layout class="QGridLayout" name="profileGrid" columnstretch="2,5">
+                  <property name="leftMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="spacing">
+                   <number>8</number>
+                  </property>
+                  <item row="0" column="0" colspan="2">
+                   <widget class="QWidget" name="profileHeading">
+                    <layout class="QHBoxLayout" name="profileHeadingLayout" stretch="0,1">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>8</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="profileHeadingIcon">
+                       <property name="text">
+                        <string />
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>assets/icons/settings.svg</pixmap>
+                       </property>
+                       <property name="scaledContents">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>18</width>
+                         <height>18</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>18</width>
+                         <height>18</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="profileHeadingLabel">
+                       <property name="text">
+                        <string>Основные настройки</string>
+                       </property>
+                       <property name="section" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="settingCaption1">
+                    <property name="text">
+                     <string>Имя</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QWidget" name="nameFields">
+                    <layout class="QHBoxLayout" name="nameFieldsLayout">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>8</number>
+                     </property>
+                     <item>
+                      <widget class="QLineEdit" name="nameInput">
+                       <property name="placeholderText">
+                        <string>Имя</string>
+                       </property>
+                       <property name="accessibleName">
+                        <string>Имя</string>
+                       </property>
+                       <property name="maxLength">
+                        <number>50</number>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="surnameInput">
+                       <property name="placeholderText">
+                        <string>Фамилия</string>
+                       </property>
+                       <property name="accessibleName">
+                        <string>Фамилия</string>
+                       </property>
+                       <property name="maxLength">
+                        <number>50</number>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="settingCaption2">
+                    <property name="text">
+                     <string>Email</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="emailInput">
+                    <property name="maxLength">
+                     <number>254</number>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="settingCaption3">
+                    <property name="text">
+                     <string>Тема</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QComboBox" name="themeInput">
+                    <item>
+                     <property name="text">
+                      <string>Светлая</string>
+                     </property>
+                    </item>
+                    <item>
+                     <property name="text">
+                      <string>Тёмная</string>
+                     </property>
+                    </item>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="settingCaption4">
+                    <property name="text">
+                     <string>Валюта</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QComboBox" name="currencyInput">
+                    <item>
+                     <property name="text">
+                      <string>₽ (Российский рубль)</string>
+                     </property>
+                    </item>
+                    <property name="toolTip">
+                     <string>Все цены каталога и платежи учитываются в рублях.</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="notificationSettingsPanel">
+                 <property name="panel" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                 <layout class="QVBoxLayout" name="notificationSettingsPanelLayout">
+                  <property name="leftMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="spacing">
+                   <number>10</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="notificationSettingsHeading">
+                    <property name="text">
+                     <string>Уведомления</string>
+                    </property>
+                    <property name="section" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="remindersSettingsRow">
+                    <layout class="QHBoxLayout" name="remindersSettingsRowLayout" stretch="0,1,0">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>14</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="remindersSettingsIcon">
+                       <property name="text">
+                        <string />
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>assets/icons/bell.svg</pixmap>
+                       </property>
+                       <property name="scaledContents">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="remindersSettingsCaption">
+                       <property name="text">
+                        <string>Напоминать о предстоящем платеже</string>
+                       </property>
+                       <property name="muted" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="remindersToggle">
+                       <property name="switch" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="accessibleName">
+                        <string>Напоминать о предстоящем платеже</string>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="successSettingsRow">
+                    <layout class="QHBoxLayout" name="successSettingsRowLayout" stretch="0,1,0">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>14</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="successSettingsIcon">
+                       <property name="text">
+                        <string />
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>assets/icons/bell.svg</pixmap>
+                       </property>
+                       <property name="scaledContents">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="successSettingsCaption">
+                       <property name="text">
+                        <string>Уведомлять об успешном платеже</string>
+                       </property>
+                       <property name="muted" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="successToggle">
+                       <property name="switch" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="accessibleName">
+                        <string>Уведомлять об успешном платеже</string>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="errorsSettingsRow">
+                    <layout class="QHBoxLayout" name="errorsSettingsRowLayout" stretch="0,1,0">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>14</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="errorsSettingsIcon">
+                       <property name="text">
+                        <string />
+                       </property>
+                       <property name="pixmap">
+                        <pixmap>assets/icons/bell.svg</pixmap>
+                       </property>
+                       <property name="scaledContents">
+                        <bool>true</bool>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>17</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="errorsSettingsCaption">
+                       <property name="text">
+                        <string>Уведомлять об ошибке платежа</string>
+                       </property>
+                       <property name="muted" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="wordWrap">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QCheckBox" name="errorsToggle">
+                       <property name="switch" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="accessibleName">
+                        <string>Уведомлять об ошибке платежа</string>
+                       </property>
+                       <property name="minimumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>34</width>
+                         <height>22</height>
+                        </size>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QFrame" name="accountPanel">
+                 <property name="panel" stdset="0">
+                  <bool>true</bool>
+                 </property>
+                 <layout class="QVBoxLayout" name="accountPanelLayout">
+                  <property name="leftMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>16</number>
+                  </property>
+                  <property name="spacing">
+                   <number>2</number>
+                  </property>
+                  <item>
+                   <widget class="QLabel" name="accountHeading">
+                    <property name="text">
+                     <string>Аккаунт</string>
+                    </property>
+                    <property name="section" stdset="0">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="changePasswordButtonRow">
+                    <layout class="QHBoxLayout" name="changePasswordButtonLayout" stretch="1,0">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>12</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="changePasswordButton">
+                       <property name="text">
+                        <string>Изменить пароль</string>
+                       </property>
+                       <property name="flat" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string>text-align:left;padding:7px 0;</string>
+                       </property>
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>assets/icons/lock.svg</normaloff>
+                        </iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="changePasswordButtonArrow">
+                       <property name="text">
+                        <string>›</string>
+                       </property>
+                       <property name="muted" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="logoutButtonRow">
+                    <layout class="QHBoxLayout" name="logoutButtonLayout" stretch="1,0">
+                     <property name="leftMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="topMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="bottomMargin">
+                      <number>0</number>
+                     </property>
+                     <property name="spacing">
+                      <number>12</number>
+                     </property>
+                     <item>
+                      <widget class="QPushButton" name="logoutButton">
+                       <property name="text">
+                        <string>Выйти из аккаунта</string>
+                       </property>
+                       <property name="flat" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                       <property name="styleSheet">
+                        <string>text-align:left;padding:7px 0;</string>
+                       </property>
+                       <property name="icon">
+                        <iconset>
+                         <normaloff>assets/icons/logout.svg</normaloff>
+                        </iconset>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="logoutButtonArrow">
+                       <property name="text">
+                        <string>›</string>
+                       </property>
+                       <property name="muted" stdset="0">
+                        <bool>true</bool>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="settingsActions">
+             <layout class="QHBoxLayout" name="settingsActionsLayout" stretch="1,0,0">
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="dirtyLabel">
+                <property name="text">
+                 <string />
+                </property>
+                <property name="muted" stdset="0">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="resetButton">
+                <property name="text">
+                 <string>Отменить</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="saveButton">
+                <property name="text">
+                 <string>Сохранить изменения</string>
+                </property>
+                <property name="primary" stdset="0">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <property name="styleSheet">
+   <string>QWidget { font-family: 'Segoe UI'; font-size: 13px; color: #191b2b; }
+QMainWindow, QDialog, QWidget#centralwidget, QWidget#loginRoot { background: #fbf7fa; }
+QFrame#sidebarFrame { background: qlineargradient(x1:0,y1:0,x2:1,y2:1,stop:0 #521b34,stop:1 #44172d); border: none; }
+QFrame#contentFrame { background: #fbf7fa; }
+QFrame#sidebarFrame QLabel { color: #fff4fa; background: transparent; }
+QLabel#brandName { font-size: 18px; font-weight: 600; }
+QFrame#sidebarFrame QPushButton { color: #fff3fa; background: transparent; border: 0; border-radius: 7px; text-align: left; padding: 0 15px; }
+QFrame#sidebarFrame QPushButton:hover { background: #672640; }
+QFrame#sidebarFrame QPushButton:checked { background: qlineargradient(x1:0,y1:0,x2:1,y2:0,stop:0 #b3336b,stop:1 #a73565); }
+QFrame#sidebarFrame QPushButton#accountButton { font-size: 12px; padding: 8px 7px; }
+QLabel#title, QLabel[heading="true"] { font-size: 29px; font-weight: 700; }
+QLabel#subtitle, QLabel[muted="true"] { color: #858391; }
+QLabel[section="true"] { font-size: 16px; font-weight: 600; }
+QFrame[panel="true"] { background: #ffffff; border: 1px solid #eee6ed; border-radius: 9px; }
+QFrame[stat="true"] { background: #faecf3; border: 1px solid #f3e4ed; border-radius: 8px; }
+QLabel[statValue="true"] { color: #92244f; font-size: 24px; font-weight: 700; }
+QLabel[statCaption="true"] { color: #85808b; font-size: 12px; }
+QPushButton { background: #ffffff; border: 1px solid #eadde6; border-radius: 6px; padding: 9px 14px; }
+QPushButton:hover { background: #faedf4; border-color: #e7b7ce; }
+QPushButton:pressed { background: #f4dbe8; }
+QPushButton:disabled { color: #a8a1a9; background: #f5f1f4; }
+QPushButton[primary="true"] { color: white; background: qlineargradient(x1:0,y1:0,x2:0,y2:1,stop:0 #df307a,stop:1 #bc205e); border: 1px solid #cd2a6c; border-radius: 9px; font-weight: 600; }
+QPushButton[primary="true"]:hover { background: #bd205e; }
+QPushButton[flat="true"] { background: transparent; border: none; color: #b42b64; padding: 5px 7px; }
+QPushButton[menu="true"] { background: transparent; border: none; color: #87818d; font-size: 23px; padding: 0; }
+QPushButton[menu="true"]:hover { background: #f9eaf1; }
+QPushButton#bellButton, QPushButton#avatarButton { border: none; background: transparent; padding: 0; }
+QLineEdit, QComboBox, QDateEdit { background: #fff; border: 1px solid #ede3eb; border-radius: 6px; padding: 8px 10px; selection-background-color: #cf2a6f; min-height: 18px; }
+QLineEdit:focus, QComboBox:focus { border-color: #d4558d; }
+QLineEdit#searchInput { font-size: 12px; padding-left: 4px; }
+QComboBox::drop-down { border: none; width: 24px; }
+QComboBox::down-arrow { image: url("assets/icons/chevron.svg"); width: 12px; height: 12px; }
+QComboBox QAbstractItemView { background: white; color: #191b2b; selection-background-color: #fae3ee; selection-color: #a7255b; outline: 0; }
+QFrame#tabs, QFrame[tabs="true"] { background: #fcf2f7; border: 1px solid #f0e2eb; border-radius: 12px; }
+QPushButton[tab="true"] { background: transparent; border: none; border-radius: 11px; padding: 7px 18px; color: #85808d; }
+QPushButton[tab="true"]:checked { background: #c4286b; color: white; }
+QCheckBox[switch="true"]::indicator { width: 34px; height: 22px; }
+QCheckBox[switch="true"]::indicator:checked { image: url("assets/icons/toggle-on.svg"); }
+QCheckBox[switch="true"]::indicator:unchecked { image: url("assets/icons/toggle-off.svg"); }
+QCheckBox[switch="true"]:focus { border: 1px dotted #bd2d67; border-radius: 8px; }
+QLabel[badge="active"], QLabel[badge="paid"] { background: #e3f5eb; color: #31825a; border-radius: 10px; padding: 4px 11px; font-size: 12px; }
+QLabel[badge="soon"], QLabel[badge="pending"] { background: #fce4ef; color: #c13370; border-radius: 10px; padding: 4px 11px; font-size: 12px; }
+QLabel[badge="inactive"] { background: #f0edf2; color: #8a8290; border-radius: 10px; padding: 4px 11px; font-size: 12px; }
+QLabel[badge="failed"] { background: #ffebed; color: #c83c51; border-radius: 10px; padding: 4px 11px; font-size: 12px; }
+QFrame[row="true"] { background: transparent; border: none; border-bottom: 1px solid #f1edf2; }
+QScrollArea { background: transparent; border: none; }
+QScrollArea &gt; QWidget &gt; QWidget { background: transparent; }
+QScrollBar:vertical { background: transparent; width: 7px; margin: 3px 0; }
+QScrollBar::handle:vertical { background: #e7cad9; border-radius: 3px; min-height: 30px; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical { background: none; }
+QLabel#statusLabel { background: #f7e4ee; color: #9c2858; border-radius: 6px; padding: 9px 14px; }
+QMenu { background: #fff; border: 1px solid #eadce6; border-radius: 7px; padding: 6px; }
+QMenu::item { padding: 9px 22px; border-radius: 4px; }
+QMenu::item:selected { background: #fae7f0; color: #af285f; }
+QToolTip { color: #fff; background: #632540; border: none; padding: 6px; }
+</string>
+  </property>
+ </widget>
+ <resources />
+ <connections />
+</ui>
